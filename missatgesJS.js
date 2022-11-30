@@ -1,26 +1,26 @@
 'use strict'
 
 // let caixaDeDialeg = {
-  function obreCaixaDeDialeg(titol, missatge) {
-    document.getElementById("titol-dialeg").innerHTML = titol;
-    document.getElementById("text-dialeg").innerHTML = missatge;
-    document.getElementById("contenidor-dialeg").style.display = "block";
-  } 
+  // function obreCaixaDeDialeg(titol, missatge) {
+  //   document.getElementById("titol-dialeg").innerHTML = titol;
+  //   document.getElementById("text-dialeg").innerHTML = missatge;
+  //   document.getElementById("contenidor-dialeg").style.display = "block";
+  // } 
 
-  function tancaCaixaDeDialeg() {
-    document.getElementById("contenidor-dialeg").style.display = "none";
-  }
+  // function tancaCaixaDeDialeg() {
+  //   document.getElementById("contenidor-dialeg").style.display = "none";
+  // }
 
-// let caixaDeDialeg = {
-//     obre : function (titol, missatge) {
-//       document.getElementById("titol-dialeg").innerHTML = titol;
-//       document.getElementById("text-dialeg").innerHTML = missatge;
-//       document.getElementById("contenidor-dialeg").style.display = "block";
-//     },
-//     tanca : function () {
-//       document.getElementById("contenidor-dialeg").style.display = "none";
-//     }
-//   };
+let caixaDeDialeg = {
+    obre : function (titol, missatge) {
+      document.getElementById("titol-dialeg").innerHTML = titol;
+      document.getElementById("text-dialeg").innerHTML = missatge;
+      document.getElementById("contenidor-dialeg").style.display = "block";
+    },
+    tanca : function () {
+      document.getElementById("contenidor-dialeg").style.display = "none";
+    }
+  };
 
   let barraDeMissatge = {
     afegir : function (missatgeRebut) {
