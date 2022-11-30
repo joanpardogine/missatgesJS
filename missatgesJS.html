@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./exFormulari.css">
+    <title>Exemples de Missatges a JS</title>
+</head>
+
+<body>
+    <h1>Exemples de Missatges a JS</h1>
+    <!-- [INICI - Caixa de diàleg] -->
+    <h2>Caixa de diàleg</h2>
+    <div id="embolcall-dialeg">
+        <div id="caixa-dialeg">
+            <div id="tanca-dialeg" onclick="tancaCaixaDeDialeg()">X</div>
+            <!-- <div id="tanca-dialeg" onclick="caixaDeDialeg.tanca()">X</div> -->
+            <h1 id="titol-dialeg"></h1>
+            <p id="text-dialeg"></p>
+        </div>
+    </div>
+
+    <!-- Mostrar la caixa de diàleg -->
+    <input type="button" value="Obre una caixa de diàleg"
+        onclick="obreCaixaDeDialeg('Títol de la caixa de diàleg', 'Text de la caixa de diàleg')" />
+    <!-- onclick="caixaDeDialeg.obre('Títol de la caixa de diàleg', 'Text de la caixa de diàleg')"/> -->
+
+    <!-- [FINAL - Caixa de diàleg] -->
+
+
+    <!-- [INICI - Barra de missatges] -->
+    <h2>Barra de missatge</h2>
+    <!-- [Afegegir barra de missatge] -->
+    <input type="button" value="Afegeix barra de missatge"
+        onclick="barraDeMissatge.afegir('Missatge de la barra de missatge!')" />
+
+    <!-- [Missatge per la barra de missatge] -->
+    <div id="embolcall-barra"></div>
+    <!-- [FINAL - Barra de missatges] -->
+
+    <!-- [INICI - Missatge a un formulari] -->
+    <h2>Exemple missatge a un formulari</h2>
+
+    <form onsubmit="return executaSubmit()">
+        <label for="correu-usuari">Email</label>
+        <input type="email" name="correu-usuari" />
+        <div id="missatge-formulari"></div>
+
+        <input type="submit" value="Submit" />
+    </form>
+    <!-- [FINAL - Missatge a un formulari] -->
+
+    <!-- [INICI - Missatge a un torradora] -->
+    <div id="caixa-torradora"></div>
+    
+    <h2>Exemple missatge de tipus torrada</h2>
+    <!-- [Missatge torrada] -->
+    <input type="button" value="Mostra torrada!" onclick="torrada.mostra('Missatge de tipus torrada!')"/>
+    <!-- [FINAL - Missatge a un torradora] -->
+
+
+    <!-- [La resta de la pàgina] -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <script src="./missatgesJS.js"></script>
+</body>
+
+</html>
