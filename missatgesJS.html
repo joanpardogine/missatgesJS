@@ -13,7 +13,7 @@
     <h1>Exemples de Missatges a JS</h1>
     <!-- [INICI - Caixa de diàleg] -->
     <h2>Caixa de diàleg</h2>
-    <div id="embolcall-dialeg">
+    <div id="contenidor-dialeg">
         <div id="caixa-dialeg">
             <div id="tanca-dialeg" onclick="tancaCaixaDeDialeg()">X</div>
             <!-- <div id="tanca-dialeg" onclick="caixaDeDialeg.tanca()">X</div> -->
@@ -23,8 +23,9 @@
     </div>
 
     <!-- Mostrar la caixa de diàleg -->
-    <input type="button" value="Obre una caixa de diàleg"
-        onclick="obreCaixaDeDialeg('Títol de la caixa de diàleg', 'Text de la caixa de diàleg')" />
+    <input  type="button"
+            value="Obre una caixa de diàleg"
+            onclick="obreCaixaDeDialeg('Títol de la caixa de diàleg', 'Text de la caixa de diàleg')" />
     <!-- onclick="caixaDeDialeg.obre('Títol de la caixa de diàleg', 'Text de la caixa de diàleg')"/> -->
 
     <!-- [FINAL - Caixa de diàleg] -->
@@ -37,7 +38,7 @@
         onclick="barraDeMissatge.afegir('Missatge de la barra de missatge!')" />
 
     <!-- [Missatge per la barra de missatge] -->
-    <div id="embolcall-barra"></div>
+    <div id="contenidor-barra"></div>
     <!-- [FINAL - Barra de missatges] -->
 
     <!-- [INICI - Missatge a un formulari] -->
